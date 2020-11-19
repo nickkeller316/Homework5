@@ -6,6 +6,8 @@ body {
 
 textarea {
   background: transparent;
+  height: 100%;
+  width: 100%;
   border: none;
   resize: none;
   color: #000000;
@@ -19,6 +21,14 @@ textarea {
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background-size: 100% 100%;
 }
 
 .description {
@@ -36,6 +46,11 @@ textarea {
   border-top: 1px solid white;
 }
 
+.col-md-8 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .hour {
   background-color: #ffffff;
   color: #000000;
@@ -48,28 +63,26 @@ textarea {
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #ee7752;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #6da799;
   color: white;
 }
 
-.saveBtn {
+.Btn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
+  height: 100%;
+  width: 100%;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.Btn i:hover {
+  font-size: 35px;
   transition: all 0.3s ease-in-out;
-}
-
-.time-block {
-  background-color: aqua;
 }
